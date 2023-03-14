@@ -428,6 +428,166 @@ svg:first-child {
    outline: none;
    margin-left: 20px;
 }
+
+.membership__title {
+   font-family: "DM Sans";
+   font-size: 36px;
+   font-weight: 700;
+   letter-spacing: -1px;
+   text-align: center;
+   line-height: 43.2px;
+   margin-bottom: 30px;
+}
+.membership {
+   padding: 50px 0;  
+}
+.membership__table {
+   width: 570px;
+   padding: 0 12px;
+}
+.membership__table table {
+   width: 100%;
+   border-radius: 20px;
+   overflow: hidden;
+}
+.membership__table__title, .membership__form__title {
+   font-family: "DM Sans";
+   font-size: 24px;
+   font-weight: 500;
+   letter-spacing: -1px;
+   line-height: 28.8px;
+   margin-bottom: 30px;
+}
+.membership__wrapper {
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.membership__table__own thead {
+   border-radius: 20px;
+   background: #3D405B;
+   color: #FFFFFF;
+   font-family: "DM Sans";
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 24px;
+}
+.membership__table__own thead>tr>th {
+   padding: 22px 16px;
+   text-align: center;
+}
+.membership__table__own tbody { 
+   font-family: "DM Sans";
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 24px;
+}
+.membership__table__own tbody>tr>td {
+   padding: 18px 16px;
+}
+.check, .none {
+   width: 15px;
+   height: 15px;
+   background-color: #81B29A;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   border-radius: 100%;
+   font-size: 8px;
+   margin: 0 auto;
+}
+.membership__table__own tbody>tr:nth-child(even) {
+   background: #F4F1DE
+}
+.none {
+   background: #E07A5F
+}
+.membership__form {
+   width: 451px;
+}
+.membership__form__box{
+   background: #423E59;
+   border-radius: 20px;
+   padding: 35px;
+}
+.membership__form__box__top {
+   font-family: "DM Sans";
+   color: #FFFFFF;
+   font-size: 24px;
+   letter-spacing: -1px;
+   line-height: 28.8px;
+   font-weight: 500;
+   margin-bottom: 30px;
+}
+.membership__form form>div {
+   display: flex;
+   flex-direction: column;
+   margin-top: 20px;
+   width: 381px;
+   height: 58px;
+   background-color: #FFFFFF;
+   border-radius: 30px;
+   padding: 10px 0 5px 10px;
+   color: #526170;
+   overflow: hidden;
+}
+.membership__form form>.comments {
+   width: 381px;
+   height: 100px;
+   border-radius: 20px;
+
+   overflow: hidden;
+} 
+.membership__form form>div>label {
+   font-size: 14px;
+   font-family: "DM Sans";
+}
+.membership__form form>div>input {
+   font-size: 16px;
+   font-family: "DM Sans";
+   width: 100%;
+   border: none;
+   color: #526170;
+   outline: none;
+}
+.membership__form form>div>textarea {
+   width: 100%;
+   font-size: 16px;
+   font-family: "DM Sans";
+   width: 100%;
+   border: none;
+   color: #526170;
+   outline: none;
+}
+.membership__form__box button {
+   font-family: "DM Sans";
+   width: 381px;
+   height: 47px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #F2CC8F;
+   color: #FFFFFF;
+   font-style: 18px;
+   font-weight: 500;
+   line-height: 27px;
+   border: none;
+   border-radius: 30px;
+   margin-top: 20px;
+}
+.events {
+   padding: 100px 0;
+   background: #F4F1DE;
+}
+.events__title {
+   font-family: "DM Sans";
+   font-size: 36px;
+   font-weight: 700;
+   letter-spacing: -1px;
+   line-height: 43.2px;
+}
 @media(max-width: 992px) {
    .header {
       background-size: cover
@@ -476,6 +636,19 @@ svg:first-child {
    .history__box__img>img {
       width: 100%;
       object-fit: fill;
+   }
+   .membership__wrapper {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto;
+      row-gap: 50px;
+   }
+   .membership__wrapper>div {
+      width: 100%;
+   }
+   .input__div, .comments, .comments__btn {
+      width: 100% !important;
+      margin-top: 40px;
    }
 }
 @media(max-width: 770px) {
