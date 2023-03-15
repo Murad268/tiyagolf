@@ -1,0 +1,24 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style-type: none;
+}
+a {
+   text-decoration: none;
+}
+:root {
+   --white: #FFFFFF;
+   --main-letter-spacing: -1px;
+   --main-dark-color: #3D405B;
+   --white-yellow: #F2CC8F;
+   --white--green: #81B29A;
+   --white--brown: #F3DD98; 
+   --white--red: #E07A5F;
+   --gray: #717275;
+   --dark--purple: #526170;
+   --purple: #4D405B;
+   --border--gray: #DEE2EB;
+   --another--white: #F4F1DE;
+   --main--font: "DM Sans"
+}

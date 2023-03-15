@@ -15,25 +15,39 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="./style/style.css">
+   <link rel="stylesheet" href="./styles/main.css">
    <title>Document</title>
 </head>
 
 <body>
+   <div class="toUp">
+      <img src="./assets/Eo_circle_green_arrow-up.png" alt="">
+   </div>
+   <div class="menu">
+      <i class="fa-solid fa-xmark"></i>
+      <ul>
+         <li><a href="">Home</a></li>
+         <li><a href="">About</a></li>
+         <li><a href="">Membership</a></li>
+         <li><a href="">Events</a></li>
+         <li><a href="">Contact Us</a></li>
+      </ul>
+   </div>
    <header class="header">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" >
          <path fill="#3D405B" fill-opacity="1"
             d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
-            style=""></path>
+            ></path>
       </svg>
-
+    
       <div class="container">
          <nav class="navbar">
             <div class="navbar__wrapper">
+              
                <div class="navbar__logo">
                   <a href="">
                      <img src="./assets/logo.png" alt="">
-                     <div>
+                     <div class="navbar__logo__text">
                         Tiya <br>
                         <span>Golf club</span>
                      </div>
@@ -57,7 +71,7 @@
                      </ul>
                   </div>
                   <div class="navbar__button">
-                     <a href="">Member Login</a>
+                     <a class="navbar__button__link" href="">Member Login</a>
                   </div>
                   <div class="navbar__hamburger">
                      <div>
@@ -69,7 +83,7 @@
                </div>
             </div>
          </nav>
-
+        
       </div>
       <div class="overlay"></div>
       <div class="header__body">
@@ -373,6 +387,9 @@
                      </div>
                   </div>
                   <div class="event__image">
+                     <div class="event__image__box">
+                        <img src="./assets/image-removebg-preview.png" alt="">
+                     </div>
                      <img src="./assets/professional-golf-player.png" alt="">
                   </div>
               </div>
@@ -404,6 +421,9 @@
                      </div>
                   </div>
                   <div class="event__image">
+                     <div class="event__image__box">
+                        <img src="./assets/image-removebg-preview.png" alt="">
+                     </div>
                      <img src="./assets/girl-taking-selfie-with-friends-golf-field.png" alt="">
                   </div>
                </div>
@@ -429,6 +449,78 @@
          </div>
       </div>
    </section>
+   <section class="contact">
+      <div class="container">
+         <h5 class="contact__title">Contact Tiya</h5>
+         <div class="contact__wrapper">
+            <div class="contact__form">
+               <div class="contact__form__box">
+                  <form action="">
+                     <div class="contact__form__box__inputs">
+                        <input placeholder="Full Name" type="text">
+                        <input placeholder="Email address" type="text">
+                     </div>
+                     <div class="contact__form__box__textarea">
+                        <textarea placeholder="Message"></textarea>
+                     </div>
+                     <button class="contact__form__box__button">
+                        Submit Form
+                     </button>
+                  </form>
+               </div>
+            </div>
+            <div class="contact__map">
+               <div class="contact__map__box">
+                  <div class="contact__map__box__address">London, United Kingdom</div>
+                  <div class="contact__map__box__number">(020) 010-020-0340</div>
+                  <div class="contact__map__box__email">info@company.com</div>
+                  <div class="contact__map__box__footer">
+                     <a href="">Directions</a>
+                  </div>
+               </div>
+               <img src="./assets/WorldMap.png" alt="">
+            </div>
+         </div>
+      </div>
+   </section>
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__wrapper">
+            <div class="navbar__logo">
+               <a href="">
+                  <img src="./assets/logo.png" alt="">
+                  <div class="footer__logo">
+                     Tiya <br>
+                     <span>Golf club</span>
+                  </div>
+               </a>
+            </div>
+            <div class="footer__right">
+               <div class="footer__right__title">Join Us</div>
+               <div class="footer__right__wrapper">
+                  <div class="footer__right__spans">
+                     <span><span class="main">Mon-Fri</span>
+                        6:00 AM - 6:00 PM</span>
+                        <hr>
+                     <span><span class="main">Sat-Sun</span>
+                        6:30 AM - 8:30 PM</span>
+                     <span class="copyriting">Copyright © 2048 Tiya Golf Club</span>
+                  </div>
+                  <div class="socials__links">
+                     <div class="socials">
+                        <div class="socials__box"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="socials__box"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="socials__box"><i class="fa-brands fa-whatsapp"></i></div>
+                     </div>
+                     <span>Desing: <br> <a href="">TemplateMo</a></span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#81B29A" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+   </footer>
    <script src="./script/script.js"></script>
 </body>
 
