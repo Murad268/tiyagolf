@@ -183,6 +183,7 @@
    .contact__title {
       margin-left: 70px;
    }
+ 
 }
 @media(max-width: 600px) {
    .contact__title {
@@ -234,15 +235,14 @@
       text-align: center;
       margin-bottom: 30px;
    }
-   svg:first-child {
- 
-      height: 440px;
-   
-   }
+
    
 }@media(max-width: 470px) {
    .navbar__logo__text {
       display: none;
+   }
+   .membership__table__own>table>thead>tr>th,   .membership__table__own>table>tbody>tr>td {
+      font-size: 10px;
    }
 }
 @media(max-width: 420px) {
@@ -262,4 +262,22 @@
       font-size: 25px;
       line-height: 40px;
    }
+   .membership__table {
+      padding: 0;
+   }
+   .navbar__wrapper {
+      justify-content: center;
+      width: max-content;
+      column-gap: 0;
+
+   }
+   .navbar__left {
+      width: max-content;
+      column-gap: 10px
+   }
+   .footer__right__spans {
+      width: 100%;
+      padding: 0;
+   }
+ 
 }
