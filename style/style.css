@@ -635,9 +635,12 @@ svg:first-child {
 }
 .event:nth-child(even) {
    background-color: #FFFFFF;
-   padding-top: 30px;
-   padding-left: 20px;
+   padding: 30px 0 30px 20px;
+
    border-radius: 30px
+}
+.event__left {
+   display: flex;
 }
 .event__desc {
    width: 509px;
@@ -701,6 +704,27 @@ svg:first-child {
    color: #717275;
    text-transform: uppercase;
 }
+@media(max-width: 1199px) {
+   .event {
+      justify-content: space-between;
+      width: 100%;
+   }
+   .event__date {
+      width: 123.656px;
+      height: 142.391px;
+   }
+   .event__image {
+      width: 271.328px;
+      height: 175.547px;
+   }
+   .event__desc {
+      width: 419px;
+   }
+   .event__desc__footer {
+      width: 100%;
+      justify-content: center;
+   }
+}
 @media(max-width: 992px) {
    .header {
       background-size: cover
@@ -763,6 +787,27 @@ svg:first-child {
       width: 100% !important;
       margin-top: 40px;
    }
+   .event {
+      flex-direction: column;
+   }
+   .event__left {
+      width: 100%;
+      justify-content: space-around;
+   }
+   .event__date {
+      width: 191.328px;
+      height: 114.391px;
+   }
+   .event__image {
+      height: 263.094px;
+      width: 406.656px;
+   }
+   .event__desc {
+      width: 100%;
+   }
+   .event__desc__footer {
+      justify-content: space-between;
+   }
 }
 @media(max-width: 770px) {
    .history__box {
@@ -783,6 +828,19 @@ svg:first-child {
       width: 100%;
       object-fit: cover;
       border-radius: 30px
+   }
+   .event__left {
+      flex-direction: column;
+      row-gap: 20px;
+   }
+   .event__left>div {
+      width: 100%;
+   }
+   .event__date {
+      order: 2
+   }
+   .event__desc__footer {
+      flex-wrap: wrap;
    }
 }
 @media(max-width: 600px) {
