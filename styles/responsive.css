@@ -211,7 +211,9 @@
 @media(max-width: 550px) {
    .menu>i {
       font-size: 20px;
-   
+   }
+   .header {
+      background-position: 0; 
    }
    .footer__right__wrapper {
       flex-direction: column;
@@ -279,5 +281,7 @@
       width: 100%;
       padding: 0;
    }
- 
+   svg:nth-of-type(2) {
+      bottom: -4%;
+   }
 }
