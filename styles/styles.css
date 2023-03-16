@@ -124,7 +124,7 @@ svg:first-child {
    top: 0;
    left: 0;
    height: auto;
-   z-index: 10;
+   z-index: 12;
 }
 
 .triangle {
@@ -244,6 +244,8 @@ svg:first-child {
    left: 0;
    width: 100%;
    height: 100%;
+   z-index: 11;
+   background-color: rgba(39, 48, 83, 0.6)
 }
 
 .navbar__button {
@@ -265,13 +267,7 @@ svg:first-child {
    color: var(--white);
 }
 
-.overlay {
-   position: absolute;
-   top: 0;
-   left: 0;
-   z-index: 11;
-   background-color: rgba(39, 48, 83, 0.3)
-}
+
 
 .navbar__button>a {
 
