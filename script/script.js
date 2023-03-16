@@ -9,6 +9,11 @@ document.querySelector('.toUp').addEventListener('click', () => {
 	window.scrollTo(0, 0)
 })
 
+
+
+
+
+
 function zoomImg(
 	imgBoxSelector,
 	imgSelector,
@@ -44,6 +49,10 @@ zoomImg(
 	'zoomedImg',
 	'zoomedBox'
 )
+
+
+
+
 
 function openMenu(openTrigger, closeTrigger, menuSelector, activeClass) {
 	const open = document.querySelector(openTrigger),

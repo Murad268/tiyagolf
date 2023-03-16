@@ -240,9 +240,7 @@
 
    
 }@media(max-width: 470px) {
-   .navbar__logo__text {
-      display: none;
-   }
+
    .membership__table__own>table>thead>tr>th,   .membership__table__own>table>tbody>tr>td {
       font-size: 10px;
    }
@@ -260,6 +258,9 @@
    }
 }
 @media(max-width: 390px) {
+   .navbar__logo__text {
+      display: none;
+   }
    .header__body__desc__title {
       font-size: 25px;
       line-height: 40px;
@@ -271,7 +272,7 @@
       justify-content: center;
       width: max-content;
       column-gap: 0;
-
+      margin: 0 auto;
    }
    .navbar__left {
       width: max-content;
