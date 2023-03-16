@@ -256,11 +256,13 @@
    .event__desc__footer>div {
       width: 100%;
    }
-}
-@media(max-width: 390px) {
+
    .navbar__logo__text {
       display: none;
    }
+}
+@media(max-width: 390px) {
+  
    .header__body__desc__title {
       font-size: 25px;
       line-height: 40px;
@@ -271,12 +273,12 @@
    .navbar__wrapper {
       justify-content: center;
       width: max-content;
-      column-gap: 0;
+      column-gap: 10px;
       margin: 0 auto;
    }
    .navbar__left {
       width: max-content;
-      column-gap: 10px
+      column-gap: 30px
    }
    .footer__right__spans {
       width: 100%;
